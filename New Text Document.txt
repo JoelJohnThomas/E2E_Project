@@ -1,3 +1,12 @@
+1. Set up
+
+	a) new environment
+	b)setup.py
+	c)requirements.txt
+
+2. src folder and build the package
+
+
 create a GitHub repo
 anaconda prompt - $code .$
 	VS code opens
@@ -6,3 +15,7 @@ anaconda prompt - $code .$
 	Make a readme file and push it to the remote repo
 
 	In remote GitHub create a gitignore file and pull to local
+
+3. create diff folders
+
+	logger.py to create log files
