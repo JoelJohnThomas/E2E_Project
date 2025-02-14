@@ -1,3 +1,24 @@
+tall and wide enuf
+
+numerical data
+
+5 to 10 features
+
+
+
+
+
+
+##################################################################################333333
+
+decorators
+exception , try catch
+logging
+
+
+
+#####################################################################################
+
 1. Set up
 
 	a) new environment
@@ -19,3 +40,6 @@ anaconda prompt - $code .$
 3. create diff folders
 
 	logger.py to create log files
+
+
+
