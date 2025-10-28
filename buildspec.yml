@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.10          # <-- match your EB platform (change if you use 3.9/3.11)
+    commands:
+      - echo "=== Upgrading pip ==="
+      - pip install --upgrade pip
+      - echo "=== Installing dependencies from requirements.txt ==="
+      - pip install -r requirements.txt -t .   # installs packages into the zip
+
+  build:
+    commands:
+      - echo "=== Creating app.zip for Elastic Beanstalk ==="
+      - zip -r app.zip . -x "*.git*" "*.pyc" "__pycache__/*" "eb-engine.log"
+
+  post_build:
+    commands:
+      - echo "Build completed – artifact: app.zip"
+
+artifacts:
+  files:
+    - app.zip
+  discard-paths: yes
